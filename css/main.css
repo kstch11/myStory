@@ -1,0 +1,432 @@
+/*header styles*/
+body {
+	padding: 0;
+	margin: 0;
+	/*overflow: hidden;*/
+}
+
+* {
+	box-sizing: border-box;
+}
+
+.header {
+	padding-top: 1.5%;
+	margin: 0 3% 0 3%;
+}
+
+.nav {
+	display: flex;
+	align-items: center;
+	
+}
+
+h1, h2, p {
+	font-family: 'Open Sans', sans-serif;
+	font-size: 21px;
+	margin-left: 8px;
+}
+
+.logoimg {
+	height: 42px;
+	width: 36px;
+}
+
+.menu {
+	display: flex;
+	margin-left: auto;
+}
+
+.menu li a {
+	text-decoration: none;
+	font-family: 'Open Sans', sans-serif;
+	font-size: 15px; 
+}
+
+.menu li {
+	margin-right: 25px;
+	list-style-type: none;
+}
+
+#home, #stories {
+	color: #000;
+}
+
+#register, #signin {
+	color: #333;
+}
+
+#profile {
+	color: #778C79;
+}
+
+/*main page styles*/
+.intro {
+	position: absolute;
+}
+
+.intro h2 {
+	margin-left: 30%;
+	width: 100%;
+}
+
+.dsgn {
+	margin-left: 25%;
+	margin-top: 15%;
+	height: 10em;
+	
+}
+
+.description 	{
+	position: absolute;
+	display: flex;
+	justify-content: space-between;
+}
+
+.desc {
+	margin-left: 10%;
+	margin-top: 6%;
+}
+
+.text {
+	width: 450%;
+	font-size: 17px;
+}
+
+.intro_pic {
+	width: 62%;
+	height: 54%;
+	display: flex;
+	margin-left: auto;
+	margin-right: 3.5%; 
+	margin-top: 2%;
+}
+
+#main-page-button {
+	border: none;
+	cursor: pointer;
+	border-radius: 1.5em;
+	color: #fff;
+	background-color: #B25B4F;
+	padding: 1em 2em;
+	transition: 0.6s;
+	position: relative;
+	margin: 31em 0 1em 4em;
+}
+
+#main-page-button a {
+	text-decoration: none;
+	font-family: 'Open Sans', sans-serif;
+	color: white;
+}
+
+#main-page-button:focus, #main-page-button:hover {
+	background-color: #C66F5E;
+}
+
+.text {
+	line-height: 200%;
+}
+
+@media print {
+	header, button, img {
+		display: none;
+	}
+
+	.intro_pic {
+		display: none;
+	}
+}
+/*registration and sign in styles*/
+.register {
+	font-family: 'Open Sans', sans-serif;
+	justify-content: center;
+	align-items: center;
+	display: flex;
+	height: 35em;
+}
+
+.register-form {
+	width: 30em;
+	padding: 2em;
+	border-radius: 2em;
+	box-shadow: 0 0.3em 2em 0 rgba(0, 0, 0, 0.1);
+}
+
+.register-title {
+	text-align: center;
+	margin: 0 0 2em 0;
+}
+.form-group {
+	position: relative;
+	margin-bottom: 2em;
+	text-align: center;
+}
+
+.form-label {
+	position: absolute;
+	padding-left: 2.7em;
+	display: flex;
+	top: 0;
+	z-index: -1;
+	color: #9EAFA0;
+	transition: 0.6s;
+}
+
+.form-input {
+	width: 80%;
+	border: none;
+	border-bottom: 0.1em solid #778C79;
+	background-color: transparent;
+	outline: none;
+	transition: 0.6s;
+}
+
+.form-input:focus {
+	border-bottom: 0.1em solid #333333;
+}
+
+#register-button, #sign-in-button {
+	margin: 0 auto;
+	display: flex;
+	border: none;
+	cursor: pointer;
+	border-radius: 1.5em;
+	color: #fff;
+	background-color: #B25B4F;
+	padding: 1em 2em;
+	transition: 0.6s;
+}
+
+#register-button:focus, #sign-in-button:hover,
+#register-button:hover, #sign-in-button:focus{
+	background-color: #C66F5E;
+}
+
+.form-input:focus ~ .form-label,
+.form-input:not(:placeholder-shown) ~ .form-label {
+	top: -1.8em;
+	font-size: 0.7em;
+	padding-left: 3.7em;
+}
+
+/*story form styles*/
+.story {
+	font-family: 'Open Sans', sans-serif;
+	display: flex;
+	height: 35em;
+	/*margin-top: 1em;*/
+	box-sizing: content-box;
+	justify-content: center;
+	align-items: center;
+}
+
+.story-form {
+	width: 70%;
+	margin-top: 7em;
+	padding: 2.5em;
+	border-radius: 2em;
+	box-shadow: 0 0.3em 2em 0 rgba(0, 0, 0, 0.1);
+}
+
+.story-title, .story-text {
+	text-align: center;
+	margin: 0 0 2em 0;
+}
+.form-group {
+	position: relative;
+	margin-bottom: 2em;
+	text-align: center;
+}
+
+#title{
+	width: 60em;
+}
+
+#text {
+	width: 60em;
+	height: 10em;
+}
+
+textarea {
+	overflow: auto;
+	resize: none;
+	position: relative;
+}
+
+#post-button {
+	margin: 0 auto;
+	display: flex;
+	border: none;
+	cursor: pointer;
+	border-radius: 1.5em;
+	color: #fff;
+	background-color: #B25B4F;
+	padding: 1em 2em;
+	transition: 0.6s;
+}
+
+#post-button:hover, #post-button:focus{
+	background-color: #C66F5E;
+}
+
+/*story page styles*/
+.story-page {
+	font-family: 'Open Sans', sans-serif;
+	display: flex;
+	height: 35em;
+	/*margin-top: 1em;*/
+	box-sizing: content-box;
+	justify-content: center;
+	align-items: center;
+}
+
+.story-container {
+	width: 70%;
+	margin-top: 300px;
+	padding: 2.5em;
+	border-radius: 2em;
+	box-shadow: 0 0.3em 2em 0 rgba(0, 0, 0, 0.1);
+}
+
+.story-title, .story-text, .story-description {
+	text-align: center;
+	margin: 0 0 2em 0;
+}
+.form-group {
+	position: relative;
+	margin-bottom: 2em;
+	text-align: center;
+}
+
+#title{
+	width: 60em;
+}
+
+#description {
+	width: 60em;
+	height: 3em;
+}
+
+#text {
+	width: 60em;
+	height: 10em;
+}
+
+textarea {
+	overflow: auto;
+	resize: none;
+	position: relative;
+}
+
+#post-button {
+	margin: 0 auto;
+	display: flex;
+	border: none;
+	cursor: pointer;
+	border-radius: 1.5em;
+	color: #fff;
+	background-color: #B25B4F;
+	padding: 1em 2em;
+	transition: 0.6s;
+}
+
+#post-button:hover, #post-button:focus{
+	background-color: #C66F5E;
+}
+
+/*story list styles*/
+.storylist {
+	font-family: 'Open Sans', sans-serif;
+	display: flex;
+	height: 15em;
+	/*margin-top: 1em;*/
+	box-sizing: content-box;
+	justify-content: center;
+	align-items: center;
+}
+
+.storylist-form {
+	width: 70%;
+	margin-top: 3em;
+	padding: 2.5em;
+	border-radius: 2em;
+	box-shadow: 0 0.3em 2em 0 rgba(0, 0, 0, 0.1);
+}
+
+.storylist-title, .story-text {
+	text-align: center;
+	margin: 0 0 2em 0;
+}
+
+#read-button {
+	margin: 0 auto;
+	display: flex;
+	border: none;
+	cursor: pointer;
+	border-radius: 1.5em;
+	color: #fff;
+	background-color: #B25B4F;
+	padding: 1em 2em;
+	transition: 0.6s;
+}
+
+#read-button:hover, #read-button:focus{
+	background-color: #C66F5E;
+}
+
+#read-button a {
+	text-decoration: none;
+	font-family: 'Open Sans', sans-serif;
+	color: white;
+}
+
+/*pagination styles*/
+.pagination-container {
+	margin: 2em;
+	position: absolute;
+}
+
+.pagination {
+	/*position: absolute;*/
+	display: flex;
+	justify-content: center;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+#pagination-button{
+	margin-right: 3px;
+	display: flex;
+	border: none;
+	cursor: pointer;
+	border-radius: 1.5em;
+	color: #fff;
+	background-color: #B25B4F;
+	padding: 1em 2em;
+	transition: 0.6s;
+}
+
+#pagination-button:focus, #pagination-button:hover {
+	background-color: #C66F5E;
+}
+
+#pagination-button a {
+	text-decoration: none;
+	font-family: 'Open Sans', sans-serif;
+	color: white;
+}
+
+footer {
+	height: 40px;
+}
+
+
+
+
+
+
+
+
+
+
+
